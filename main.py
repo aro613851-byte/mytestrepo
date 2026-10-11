@@ -1,2 +1,3 @@
 print("helloWorld")
-print("123")
+if 1 == 1:
+    print("yes")
