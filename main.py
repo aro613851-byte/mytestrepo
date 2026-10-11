@@ -1,3 +1,5 @@
-print("helloWorld")
-if 1 == 1:
-    print("yes")
+from flask import Flask
+app = Flask(__name__)
+@app.route("/health")
+def health():
+    return "все хорошо"
