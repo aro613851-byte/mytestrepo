@@ -1,5 +1,8 @@
 from flask import Flask
 app = Flask(__name__)
-@app.route("/health")
-def health():
-    return "все хорошо"
+
+@app.route("/ping")
+def ping():
+    return "pong!"
+
+app.run()
